@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{TITLE}} | NutraSift</title>
+  <meta name="description" content="Read our honest review of {{PRODUCT_NAME}} including ingredients, benefits, pros, cons, and side effects.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <a href="../index.html" class="logo">Nutra<span>Sift</span></a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h1>{{TITLE}}</h1>
+      
+      <div class="post-meta">
+        <span class="category-badge">{{CATEGORY}}</span>
+        <span style="font-size: 0.9rem; color: var(--text-muted);">Published: {{DATE}}</span>
+        <span style="font-size: 0.9rem; color: #d97706; font-weight: 600;">⭐ Rating: {{RATING}} / 5</span>
+      </div>
+
+      {{CONTENT}}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Affiliate Disclosure:</strong> NutraSift is a professional review site that may receive compensation from the companies whose products we review. We test each product thoroughly and give high marks to only the very best. We are independently owned and the opinions expressed here are our own.</p>
+    <p><strong>Medical Disclaimer:</strong> The information on this website is for educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your doctor before starting any supplement or diet plan.</p>
+    <p style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">&copy; 2026 NutraSift. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
