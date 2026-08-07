@@ -3,39 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NutraSift | Honest Health & Supplement Reviews</title>
-  <meta name="description" content="Unbiased, evidence-based reviews and ingredient analysis of health supplements, weight loss formulas, and wellness products.">
+  <title>NutraSift | Science-Backed Health & Supplement Reviews</title>
+  <meta name="description" content="Unbiased, evidence-based reviews and ingredient analysis of health supplements, weight loss formulas, brain health, and wellness products.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
+  <header class="site-header">
     <div class="header-container">
-      <a href="index.html" class="logo">Nutra<span>Sift</span></a>
+      <a href="index.html" class="logo">Nutra<span>Sift</span><span class="logo-badge">Verified</span></a>
+      <button class="mobile-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</button>
       <nav class="nav-links">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
       </nav>
     </div>
   </header>
 
-  <main class="homepage-container">
-    <section class="hero">
-      <h1>Honest Health & Supplement Reviews</h1>
-      <p>We analyze the science, ingredients, dosages, and side effects so you can make informed wellness decisions.</p>
-    </section>
+  <main class="main-wrapper">
+    <div class="homepage-container">
 
-    <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.8rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-dark);">Latest Reviews</h2>
+      <!-- Hero Banner -->
+      <section class="hero">
+        <div class="hero-pill">🛡️ 100% Independent & Evidence-Based Reviews</div>
+        <h1>Honest Health & Supplement Reviews</h1>
+        <p>We analyze clinical ingredients, dosages, manufacturing standards, and real consumer feedback so you can make safe, informed wellness decisions.</p>
+        
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <div class="hero-stat-number">100%</div>
+            <div class="hero-stat-label">Independent</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-number">FDA/GMP</div>
+            <div class="hero-stat-label">Audited Quality</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-number">E-E-A-T</div>
+            <div class="hero-stat-label">Clinical Standards</div>
+          </div>
+        </div>
+      </section>
 
-    <div class="post-grid">
-      <!-- POSTS_PLACEHOLDER -->
+      <!-- Search & Filters -->
+      <div class="controls-bar">
+        <div class="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="review-search" placeholder="Search supplements by name, ingredient, or health goal..." onkeyup="filterReviews()">
+        </div>
+
+        <div class="category-pills" id="category-pills">
+          <span class="filter-pill active" onclick="filterCategory('all', this)">All Category</span>
+          <span class="filter-pill" onclick="filterCategory('Health Product Review', this)">Health Reviews</span>
+          <span class="filter-pill" onclick="filterCategory('Weight Loss', this)">Weight Loss</span>
+          <span class="filter-pill" onclick="filterCategory('Brain Health', this)">Brain & Memory</span>
+          <span class="filter-pill" onclick="filterCategory('Blood Sugar', this)">Blood Sugar</span>
+          <span class="filter-pill" onclick="filterCategory('Supplements', this)">Supplements</span>
+        </div>
+      </div>
+
+      <div class="section-heading">
+        <span>Latest Verified Reviews</span>
+      </div>
+
+      <div class="post-grid" id="reviews-grid">
+        <!-- POSTS_PLACEHOLDER -->
+      </div>
+
     </div>
   </main>
 
   <footer class="site-footer">
-    <p><strong>Affiliate Disclosure:</strong> NutraSift is a professional review site that may receive compensation from the companies whose products we review. We test each product thoroughly and give high marks to only the very best. We are independently owned and the opinions expressed here are our own.</p>
-    <p><strong>Medical Disclaimer:</strong> The information on this website is for educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your doctor before starting any supplement or diet plan.</p>
-    <p style="margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">&copy; 2026 NutraSift. All rights reserved.</p>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Nutra<span>Sift</span></a>
+        <p>Your trusted, independent source for factual supplement reviews, ingredient analysis, and science-backed health insights.</p>
+      </div>
+      <div>
+        <h4 class="footer-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Legal & Trust</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="disclaimer.html">Disclaimers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-disclaimers">
+      <p><strong>Affiliate Disclosure:</strong> NutraSift is a professional review site that may receive compensation from companies whose products we review. We test each product thoroughly and give high marks to only the very best. We are independently owned and opinions expressed here are our own.</p>
+      <p><strong>Medical Disclaimer:</strong> The information on this website is for educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your doctor before starting any supplement or diet plan.</p>
+    </div>
+
+    <div class="copyright">
+      &copy; 2026 NutraSift. All rights reserved.
+    </div>
   </footer>
+
+  <script>
+    function filterReviews() {
+      const q = document.getElementById('review-search').value.toLowerCase();
+      const cards = document.querySelectorAll('#reviews-grid .post-card');
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(q) ? 'flex' : 'none';
+      });
+    }
+
+    function filterCategory(cat, el) {
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+
+      const cards = document.querySelectorAll('#reviews-grid .post-card');
+      cards.forEach(card => {
+        if (cat === 'all') {
+          card.style.display = 'flex';
+        } else {
+          const badge = card.querySelector('.category-badge');
+          const badgeText = badge ? badge.textContent.toLowerCase() : '';
+          card.style.display = badgeText.includes(cat.toLowerCase()) ? 'flex' : 'none';
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
