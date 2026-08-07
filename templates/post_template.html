@@ -5,6 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{TITLE}} | NutraSift</title>
   <meta name="description" content="Read our honest review of {{PRODUCT_NAME}} including ingredients, benefits, pros, cons, pricing, and clinical safety details.">
+  <meta name="keywords" content="{{PRODUCT_NAME}} review, {{PRODUCT_NAME}} ingredients, {{PRODUCT_NAME}} side effects, {{PRODUCT_NAME}} price, {{PRODUCT_NAME}} benefits">
+  <meta name="author" content="NutraSift Editorial Team">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+  <!-- Open Graph / Facebook SEO -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{TITLE}} | NutraSift">
+  <meta property="og:description" content="Read our honest review of {{PRODUCT_NAME}} including ingredients, benefits, pros, cons, pricing, and safety.">
+  <meta property="og:site_name" content="NutraSift">
+
+  <!-- Twitter Card SEO -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}} | NutraSift">
+  <meta name="twitter:description" content="Read our honest review of {{PRODUCT_NAME}} including ingredients, benefits, pros, cons, and safety.">
+
+  <!-- JSON-LD Structured Data Schema for Google Product Review Stars -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Review",
+    "name": "{{TITLE}}",
+    "headline": "{{TITLE}}",
+    "itemReviewed": {
+      "@type": "Product",
+      "name": "{{PRODUCT_NAME}}",
+      "category": "{{CATEGORY}}"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "{{RATING}}",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "NutraSift Editorial Team",
+      "url": "https://nutrasift.github.io/review/about.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "NutraSift",
+      "url": "https://nutrasift.github.io/review/"
+    },
+    "datePublished": "{{DATE}}",
+    "dateModified": "2026-08-07"
+  }
+  </script>
+
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
