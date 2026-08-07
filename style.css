@@ -20,7 +20,7 @@
   --radius-lg: 20px;
   --radius-pill: 9999px;
   --max-width: 1140px;
-  --content-width: 820px;
+  --content-width: 740px;
 }
 
 * {
@@ -507,22 +507,23 @@ header.site-header {
 }
 
 /* ==================== ARTICLE DETAIL STYLES ==================== */
+/* ==================== ARTICLE DETAIL STYLES ==================== */
 article {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 3.5rem 3rem;
-  box-shadow: var(--shadow-md);
-  margin-bottom: 3rem;
+  border-radius: var(--radius-md);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2.5rem;
 }
 
 .breadcrumbs {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
+  gap: 0.4rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .breadcrumbs a {
@@ -536,32 +537,32 @@ article {
 
 article h1 {
   font-family: 'Outfit', sans-serif;
-  font-size: 2.6rem;
+  font-size: 1.85rem;
   font-weight: 800;
   color: var(--text-dark);
-  line-height: 1.2;
-  margin-bottom: 1.25rem;
-  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
 }
 
 .post-meta-bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.85rem 1.25rem;
+  gap: 0.65rem 1rem;
   background-color: #f8fafc;
-  padding: 1rem 1.35rem;
-  border-radius: var(--radius-md);
+  padding: 0.75rem 1.15rem;
+  border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
-  margin-bottom: 2.25rem;
-  font-size: 0.88rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
 .author-badge {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
   font-weight: 500;
   color: var(--text-dark);
 }
@@ -572,15 +573,15 @@ article h1 {
 }
 
 .author-avatar {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   background: var(--primary-color);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 700;
 }
 
@@ -589,12 +590,12 @@ article h1 {
   color: #e11d48;
   border: 1px solid #ffe4e6;
   font-weight: 700;
-  font-size: 0.78rem;
-  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 
 .readers-badge {
@@ -602,17 +603,18 @@ article h1 {
   color: #2563eb;
   border: 1px solid #dbeafe;
   font-weight: 600;
-  font-size: 0.78rem;
-  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.55rem;
   border-radius: var(--radius-pill);
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 
 .updated-badge {
   font-weight: 500;
   color: #475569;
+  font-size: 0.82rem;
 }
 
 .rating-badge {
@@ -620,67 +622,62 @@ article h1 {
   color: #b45309;
   border: 1px solid #fde68a;
   font-weight: 700;
-  font-size: 0.8rem;
-  padding: 0.25rem 0.65rem;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.55rem;
   border-radius: var(--radius-pill);
-}
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 700;
 }
 
 /* Typography inside articles */
 article h2 {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-dark);
-  margin-top: 2.75rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
   border-bottom: 2px solid var(--border-color);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
 }
 
 article h3 {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--primary-color);
-  margin-top: 2rem;
-  margin-bottom: 0.85rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
 }
 
 article p {
-  margin-bottom: 1.35rem;
+  margin-bottom: 1.1rem;
   color: #334155;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
+  line-height: 1.65;
 }
 
 article ul, article ol {
-  margin-left: 1.75rem;
-  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
   color: #334155;
 }
 
 article li {
-  margin-bottom: 0.6rem;
-  font-size: 1.02rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.96rem;
 }
 
 /* Tables for Pros & Cons */
 article table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   box-shadow: var(--shadow-sm);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   overflow: hidden;
 }
 
 article th, article td {
-  padding: 0.9rem 1.25rem;
+  padding: 0.75rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
 }
@@ -689,19 +686,16 @@ article th {
   background-color: var(--primary-color);
   color: white;
   font-weight: 600;
-}
-
-article tr:nth-child(even) {
-  background-color: #f8fafc;
+  font-size: 0.9rem;
 }
 
 /* Callout Boxes */
 .callout-box {
   background-color: var(--primary-light);
   border-left: 4px solid var(--primary-color);
-  padding: 1.5rem;
-  margin: 2rem 0;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 .callout-box p {
@@ -713,37 +707,38 @@ article tr:nth-child(even) {
 /* CTA Buttons in Articles */
 .cta-container {
   text-align: center;
-  margin: 3rem 0;
+  margin: 2.25rem 0;
 }
 
 .cta-button {
   display: inline-block;
   background-color: var(--accent-color);
   color: white;
-  padding: 1.1rem 2.5rem;
+  padding: 0.9rem 2rem;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  border-radius: var(--radius-md);
-  box-shadow: 0 4px 16px rgba(255, 111, 97, 0.4);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 14px rgba(255, 111, 97, 0.35);
   transition: all 0.25s ease;
 }
 
 .cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(255, 111, 97, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 111, 97, 0.45);
   background-color: var(--accent-hover);
 }
 
 /* Post main image */
 .post-main-img {
   width: 100%;
-  max-height: 420px;
+  max-height: 280px;
   object-fit: contain;
-  margin-bottom: 2.25rem;
-  border-radius: var(--radius-md);
-  background-color: #f1f5f9;
-  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.75rem;
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
 }
 
 /* ==================== STATIC PAGE STYLES ==================== */
